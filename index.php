@@ -133,6 +133,6 @@ class City {
 
 }
 
-$iverpool = new City('Liverpool');
+$liverpool = new City('Liverpool');
 $liverpool->getCitiesByDistance(100);
 
