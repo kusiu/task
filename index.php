@@ -99,8 +99,7 @@ class City {
 	}
 
 	/**
-	 * Returns list of the cities from the instantiated city by distance
-	 * Default the distance is 100 miles
+	 * Returns list of the nearest cities by distance
 	 *
 	 * @param int $distance distance in miles, default is 100
 	 * @return $result array 
@@ -134,6 +133,6 @@ class City {
 
 }
 
-$london = new City('Liverpool');
-$london->getCitiesByDistance(100);
+$iverpool = new City('Liverpool');
+$liverpool->getCitiesByDistance(100);
 
