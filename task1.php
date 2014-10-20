@@ -82,7 +82,6 @@ class ISO {
 
 }
 
-// Task no. 1
 $iso = new ISO();
 $countryCodes = $iso->getCountryCodes();
 
