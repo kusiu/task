@@ -19,6 +19,11 @@ class City {
 
 	}
 
+	public function getCountryCodes() {
+		$jsonData = file_get_contents("countries.json");
+		return $countryInfo = json_decode($jsonData, true);
+	}
+
 	/**
 	 * Returns cities 
 	 *
@@ -134,5 +139,22 @@ class City {
 }
 
 $liverpool = new City('Liverpool');
-$liverpool->getCitiesByDistance(100);
+// $liverpool->getCitiesByDistance(100);
+$countries = $liverpool->getCountryCodes();
+
+foreach($countries as $country) {
+	echo $country['cca3']."<br />";
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
